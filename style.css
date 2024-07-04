@@ -1,0 +1,57 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    font-family: JetBrains,Mono;
+    background-image: url(Pombensin.jpg);
+}
+
+h1 {
+    text-align: center;
+    text-shadow: 2px 2px 5px rgb(250, 249, 249);
+}
+
+form, table {
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    text-shadow: 2px 2px 5px rgb(250, 249, 249);
+}
+
+form label, form select, form input {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    cursor: pointer ;
+    background-color: white;
+    color: black;
+    border: 2px solid #aa048e;
+    box-shadow: 0 8px 16px 0 rgba(10, 8, 8, 0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  }
+    
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    text-align: left;
+    padding: 12px;
+}
+
+th {
+    background-color: #f2f2f2;
+}
