@@ -5,20 +5,28 @@ body {
     flex-direction: column;
     min-height: 100vh;
     margin: 0;
-    font-family: JetBrains,Mono;
-    background-image: url(Pombensin.jpg);
+    font-family: 'JetBrains Mono', monospace;
+    background-image: url('Pombensin.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #333;
 }
 
 h1 {
     text-align: center;
-    text-shadow: 2px 2px 5px rgb(250, 249, 249);
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.5);
+    color: #333;
 }
 
 form, table {
     width: 80%;
     max-width: 600px;
     margin: 20px auto;
-    text-shadow: 2px 2px 5px rgb(250, 249, 249);
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 form label, form select, form input {
@@ -27,18 +35,28 @@ form label, form select, form input {
     margin-bottom: 10px;
 }
 
+form input, form select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
 button {
     display: block;
     width: 100%;
     padding: 10px;
-    cursor: pointer ;
-    background-color: white;
-    color: black;
-    border: 2px solid #aa048e;
-    box-shadow: 0 8px 16px 0 rgba(10, 8, 8, 0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-  }
-    
+    cursor: pointer;
+    background-color: #aa048e;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
 
+button:hover {
+    background-color: #880378;
+}
 
 table {
     width: 100%;
@@ -47,11 +65,15 @@ table {
 }
 
 table, th, td {
-    border: 1px solid black;
+    border: 1px solid #ddd;
     text-align: left;
     padding: 12px;
 }
 
 th {
-    background-color: #f2f2f2;
+    background-color: #f9f9f9;
+}
+
+td {
+    background-color: #fff;
 }
