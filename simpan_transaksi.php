@@ -14,3 +14,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     echo "<script>alert('Transaksi berhasil disimpan.'); window.location.href = 'transaksi.txt';</script>";
 }
 ?>
+
